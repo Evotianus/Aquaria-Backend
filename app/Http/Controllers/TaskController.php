@@ -42,7 +42,7 @@ class TaskController extends Controller
     }
 
     public function showAllTask(Request $request) {
-        $tasks = Task::where('user_id', $request->id)->get()    ;
+        $tasks = Task::where('user_id', $request->id)->get();
 
         return response()->json($tasks, 200);
     }
