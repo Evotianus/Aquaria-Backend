@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Task;
 use App\Models\Fish;
+use App\Models\Timer;
 
 class DatabaseSeeder extends Seeder
 {
@@ -86,5 +87,6 @@ class DatabaseSeeder extends Seeder
 
         User::factory(5)->create();
         Task::factory(200)->create();
+        Timer::factory(200)->create();
     }
 }
